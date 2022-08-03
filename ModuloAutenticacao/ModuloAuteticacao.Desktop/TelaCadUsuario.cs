@@ -50,7 +50,7 @@ namespace ModuloAuteticacao.Desktop
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            new TelaNivel().Show();
         }
 
         private void label6_Click(object sender, EventArgs e)
