@@ -40,6 +40,15 @@ namespace ModuloAuteticacao.Desktop
             dvgNivel.DataSource = nivelPesquisa.Pesquisar();
         }
 
-      
+        private void dvgNivel_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            NivelDAO nivel = new NivelDAO();
+            dvgNivel.DataSource = nivel.PesquisarPorNome(txtNome.Text);
+        }
     }
     }

@@ -61,6 +61,12 @@
     <Compile Include="TelaCadUsuario.Designer.cs">
       <DependentUpon>TelaCadUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaCadUsuario1cs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TelaCadUsuario1cs.Designer.cs">
+      <DependentUpon>TelaCadUsuario1cs.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaNivel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="TelaCadUsuario.resx">
       <DependentUpon>TelaCadUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaCadUsuario1cs.resx">
+      <DependentUpon>TelaCadUsuario1cs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaNivel.resx">
       <DependentUpon>TelaNivel.cs</DependentUpon>

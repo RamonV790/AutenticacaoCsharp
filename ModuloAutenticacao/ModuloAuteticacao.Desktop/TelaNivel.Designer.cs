@@ -42,7 +42,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(523, 272);
+            this.btnCadastrar.Location = new System.Drawing.Point(523, 180);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(89, 27);
             this.btnCadastrar.TabIndex = 0;
@@ -53,23 +53,22 @@
             // txtId
             // 
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(204, 155);
+            this.txtId.Location = new System.Drawing.Point(204, 31);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(408, 20);
             this.txtId.TabIndex = 1;
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(204, 201);
+            this.txtNome.Location = new System.Drawing.Point(204, 90);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(408, 20);
             this.txtNome.TabIndex = 2;
-
             // 
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(162, 162);
+            this.lblId.Location = new System.Drawing.Point(162, 38);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(16, 13);
             this.lblId.TabIndex = 3;
@@ -78,7 +77,7 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(162, 208);
+            this.lblNome.Location = new System.Drawing.Point(162, 97);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(35, 13);
             this.lblNome.TabIndex = 4;
@@ -86,7 +85,7 @@
             // 
             // btnDeletar
             // 
-            this.btnDeletar.Location = new System.Drawing.Point(294, 272);
+            this.btnDeletar.Location = new System.Drawing.Point(285, 180);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(89, 27);
             this.btnDeletar.TabIndex = 5;
@@ -95,16 +94,17 @@
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(165, 272);
+            this.btnPesquisar.Location = new System.Drawing.Point(165, 180);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(89, 27);
             this.btnPesquisar.TabIndex = 6;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(417, 272);
+            this.btnAtualizar.Location = new System.Drawing.Point(414, 180);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(89, 27);
             this.btnAtualizar.TabIndex = 7;
@@ -114,16 +114,18 @@
             // dvgNivel
             // 
             this.dvgNivel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgNivel.Location = new System.Drawing.Point(14, 380);
+            this.dvgNivel.Location = new System.Drawing.Point(21, 241);
             this.dvgNivel.Name = "dvgNivel";
             this.dvgNivel.Size = new System.Drawing.Size(671, 242);
             this.dvgNivel.TabIndex = 8;
+            this.dvgNivel.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgNivel_CellContentClick);
             // 
             // TelaNivel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 634);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(704, 505);
             this.Controls.Add(this.dvgNivel);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnPesquisar);
