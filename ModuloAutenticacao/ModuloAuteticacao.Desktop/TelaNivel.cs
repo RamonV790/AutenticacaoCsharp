@@ -50,5 +50,9 @@ namespace ModuloAuteticacao.Desktop
             NivelDAO nivel = new NivelDAO();
             dvgNivel.DataSource = nivel.PesquisarPorNome(txtNome.Text);
         }
+
+ 
+
+  
     }
     }

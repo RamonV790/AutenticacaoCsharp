@@ -29,8 +29,15 @@ namespace ModuloAuteticacao.Classes
 
             return "Dados Inseridos Com sucesso!";
         }
-        public string Atualizar()
+        public string Atualizar(string nome)
         {
+            Conexao.MinhaInstancia.Open();
+            SqlCommand comando = Conexao.MinhaInstancia.CreateCommand();
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandText = ("SELECT * from Nivel where Nome=@Nome;");
+            comando.Parameters.Clear();
+            comando.Parameters.Add(new SqlParameter("@nome", nome));
+            comando.ExecuteNonQuery();
             return "Você atualizou";
         }
         public DataTable Pesquisar()
@@ -70,9 +77,25 @@ namespace ModuloAuteticacao.Classes
 
 
 
+        
 
-        public string Deletar()
+
+
+
+        public string Deletar(string nome)
         {
+
+            Conexao.MinhaInstancia.Open();
+            SqlCommand comando = Conexao.MinhaInstancia.CreateCommand();
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandText = ("SELECT * from Nivel where Nome=@Nome;");
+            comando.Parameters.Contains(nome);
+            comando.Parameters.Remove(nome);
+            DataTable delete = new DataTable();
+            SqlDataReader reader = comando.ExecuteReader();
+            delete.Load(reader);
+            Conexao.MinhaInstancia.Close();
+
             return "Você vai deletar";
         }
     

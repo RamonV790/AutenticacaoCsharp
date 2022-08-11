@@ -53,9 +53,9 @@
             // txtId
             // 
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(204, 31);
+            this.txtId.Location = new System.Drawing.Point(204, 48);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(408, 20);
+            this.txtId.Size = new System.Drawing.Size(36, 20);
             this.txtId.TabIndex = 1;
             // 
             // txtNome
@@ -68,7 +68,7 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(162, 38);
+            this.lblId.Location = new System.Drawing.Point(181, 55);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(16, 13);
             this.lblId.TabIndex = 3;
